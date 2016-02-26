@@ -1,2 +1,45 @@
-<h1>Dives#show</h1>
-<p>Find me in app/views/dives/show.html.erb</p>
+<div class="container">
+  <div class="jumbotron">
+    <center><h1>SCUBA DIVES</h1></center>
+    <p>...</p>
+  </div>
+<p><center>
+  <strong>#</strong>
+  <%= @dive.number %> |
+  <strong>Date</strong>
+  <%= @dive.date.strftime('%d %b %y') %>
+  <br>
+  <strong>Dive Site</strong>
+  <%= link_to @dive.place.sites, place_path(@dive.place_id) %>
+
+  <br>
+  <strong>Time In</strong>
+  <%= @dive.timein.strftime('%H:%M') %> |
+  <strong>Time Out</strong>
+  <%= @dive.timeout.strftime('%H:%M') %> |
+  <strong>Dive Depth</strong>
+  <%= @dive.depth %>
+
+  <br>
+  <strong>Starting Air Pressure</strong>
+  <%= @dive.air_start %> PSI |
+  <strong>Ending Air Pressure</strong>
+  <%= @dive.air_end %> PSI |
+  <strong>Nitrox</strong>
+  <%= @dive.nitrox %>
+
+  <br>
+  <strong>Temperature</strong>
+  <%= @dive.temperature %> degrees |
+  <strong>Weights</strong>
+  <%= @dive.weight %> lbs |
+  <strong>Computer Used</strong>
+  <%= @dive.computer %>
+</p>
+
+<%= link_to "Edit", edit_dive_path(@dive) %> |
+<%= link_to "Delete", dive_path, method: :delete, data: {
+  confirm: "Are you sure you want to delete this dive?"} %> |
+<%= link_to "Back", 'javascript:history.go(-1);' %>
+</center>
+</div>

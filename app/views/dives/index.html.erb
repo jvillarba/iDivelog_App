@@ -1,2 +1,16 @@
-<h1>Dives#index</h1>
-<p>Find me in app/views/dives/index.html.erb</p>
+<div class="container">
+  <h1><center>LIST OF DIVES</center></h1>
+  <center><%= link_to "Add new Dive", new_dive_path %></center>
+
+  <center>
+  <% @dives.reverse.each do |d| %>
+    <h3><%= link_to d.number, dive_path(d) %>
+      <%= d.date.strftime('%d %b %y') %>
+      <%= d.place.sites %></h3>
+
+    <h4>Bottom time: <%= ((d.timeout - d.timein)/60).to_i %> min. |
+      Max. depth of <%= d.depth %> feet
+    <hr>
+  <% end %>
+</center>
+</div>

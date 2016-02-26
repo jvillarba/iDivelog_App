@@ -1,2 +1,68 @@
-<h1>Dives#new</h1>
-<p>Find me in app/views/dives/new.html.erb</p>
+<div class="container">
+  <h1><center>ADD NEW DIVE</center></h1>
+
+  <%= form_for @dive do |f| %>
+    <div>
+      <%= f.label :number, 'Dive #' %>
+      <%= f.number_field :number %>
+    </div>
+
+    <div>
+      <%= f.label :date, 'Date' %>
+      <%= f.date_field :date %>
+    </div>
+
+    <div>
+      <p> Dive Site <%= f.collection_select(:place_id, Place.all, :id, :sites) %> </p>
+    </div>
+
+    <div>
+      <%= f.label :timein, 'Time In' %>
+      <%= f.time_field :timein %>
+    </div>
+
+    <div>
+      <%= f.label :timeout, 'Time Out' %>
+      <%= f.time_field :timeout %>
+    </div>
+
+    <div>
+      <%= f.label :depth, 'Max. Depth' %>
+      <%= f.number_field :depth %>
+    </div>
+
+    <div>
+      <%= f.label :air_start, 'Starting Air' %>
+      <%= f.number_field :air_start %>
+    </div>
+
+    <div>
+      <%= f.label :air_end, 'Ending Air' %>
+      <%= f.number_field :air_end %>
+    </div>
+
+    <div>
+      <%= f.label :nitrox, 'Nitrox' %>
+      <%= f.number_field :nitrox %>
+    </div>
+
+    <div>
+      <%= f.label :temperature, 'Temperature' %>
+      <%= f.number_field :temperature %>
+    </div>
+
+    <div>
+      <%= f.label :weight, 'Weight' %>
+      <%= f.number_field :weight %>
+    </div>
+
+    <div>
+      <%= f.label :computer, 'Dive Computer' %>
+      <%= f.text_field :computer %>
+    </div>
+
+    <div>
+      <%= f.submit "Add new dive" %>
+    </div>
+  <% end %>
+</div>

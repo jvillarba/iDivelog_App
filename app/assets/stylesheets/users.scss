@@ -1,3 +1,16 @@
-// Place all the styles related to the Users controller here.
+// Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron
+{
+  background-image: url(http://www.scubadiving.com/sites/scubadiving.com/files/styles/medium_1x_/public/import/2013/files/_images/201309/turtturt_0.jpg?itok=fyeh5MXS);
+  color: white!important;
+  font-family: 'Beunard', serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+  min-height: 450px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
