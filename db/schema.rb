@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160226085714) do
+ActiveRecord::Schema.define(version: 20160226090853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dives", force: :cascade do |t|
+    t.integer  "number"
+    t.date     "date"
+    t.time     "timein"
+    t.time     "timeout"
+    t.integer  "depth"
+    t.integer  "air_start"
+    t.integer  "air_end"
+    t.string   "nitrox"
+    t.string   "temperature"
+    t.integer  "weight"
+    t.string   "computer"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "places", force: :cascade do |t|
     t.string   "city"
