@@ -1,2 +1,17 @@
-<h1>Places#new</h1>
-<p>Find me in app/views/places/new.html.erb</p>
+<h1><center>ADD NEW DIVE SITE</center></h1>
+
+<%= form_for @place do |f| %>
+  <div>
+    <%= f.label :city, 'City' %>
+    <%= f.text_field :city %>
+  </div>
+
+  <div>
+    <%= f.label :sites, 'Site' %>
+    <%= f.text_field :sites %>
+  </div>
+
+  <div>
+    <%= f.submit "Add new site" %>
+  </div>
+<% end %>

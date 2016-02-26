@@ -1,2 +1,18 @@
-<h1>Places#show</h1>
-<p>Find me in app/views/places/show.html.erb</p>
+<h1><center><%= @place.sites %></center></h1>
+
+<div>
+  <center>
+    <strong><%= @place.city %></strong>
+
+  </center>
+</div>
+
+<div>
+  <center>
+    <%= link_to "Edit", edit_place_path(@place) %> |
+    <%= link_to "Delete", place_path, method: :delete, data: {
+      confirm: "Are you sure you want to delete this dive site?"} %> |
+    <%= link_to "Back", 'javascript:history.go(-1);' %>
+
+  </center>
+</div>
