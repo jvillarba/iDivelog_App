@@ -1,8 +1,9 @@
-# ONLINE SCUBA DIVELOG
+# Welcome to the bar...
 
 ![](/app/assets/images/divebar.jpg)
 
 ## WDI_SM_21 Project Two
+## ONLINE SCUBA DIVELOG
 
 ** This app will allow users to log their scuba dives with an online file system **
 
