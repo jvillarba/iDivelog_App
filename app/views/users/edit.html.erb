@@ -1,2 +1,32 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<h1><center>EDIT THIS USER</center></h1>
+
+<%= form_for @user do |f| %>
+  <div>
+    <%= f.label :name, 'Name' %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :email, 'Email' %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :password, 'Password' %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div>
+    <%= f.label :certification, 'Certification' %>
+    <%= f.text_field :certification %>
+  </div>
+
+  <div>
+    <%= f.label :avatar, 'Profile Picture' %>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div>
+    <%= f.submit "Submit changes!" %>
+  </div>
+<% end %>
