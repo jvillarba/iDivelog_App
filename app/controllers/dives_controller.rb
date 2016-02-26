@@ -14,11 +14,9 @@ class DivesController < ApplicationController
   end
 
   def create
-    if @dive = current_user.dives.new(dive_params)
-        @dive.save
+    @dive = current_user.dives.new(dive_params)
+    if @dive.save
       redirect_to dives_path
-    else
-      redirect_to root_path
     end
   end
 
@@ -43,6 +41,6 @@ class DivesController < ApplicationController
 
   private
   def dive_params
-    params.require(:dive).permit(:number, :date, :timein, :timeout, :depth, :bottom_time, :air_start, :air_end, :nitrox, :temperature, :weight, :computer)
+    params.require(:dive).permit(:number, :date, :timein, :timeout, :depth, :bottom_time, :air_start, :air_end, :nitrox, :temperature, :weight, :computer, :place_id)
   end
 end

@@ -6,7 +6,7 @@
   <% @dives.reverse.each do |d| %>
     <h3><%= link_to d.number, dive_path(d) %>
       <%= d.date.strftime('%d %b %y') %>
-      <%= d.place.sites %></h3>
+    </h3>
 
     <h4>Bottom time: <%= ((d.timeout - d.timein)/60).to_i %> min. |
       Max. depth of <%= d.depth %> feet

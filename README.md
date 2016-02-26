@@ -4,6 +4,7 @@
 
 ## WDI_SM_21 Project Two
 ## ONLINE SCUBA DIVELOG
+APPLICATION: guarded-temple-31706
 
 ** This app will allow users to log their scuba dives with an online file system **
 
@@ -42,6 +43,8 @@ As a diver, I want to be add the different sites and add photos to recall the un
 * Rails
 * Bootstrap
 * Heroku/AWS
+
+* [Trello](https://trello.com/b/swhcynVc/wdi-p2-scuba-log-book)
 
 The following drafts are ERBs of my online SCUBA divelog.
 ![](/app/assets/images/logbook.png)![](/app/assets/images/wireframe.jpg)
