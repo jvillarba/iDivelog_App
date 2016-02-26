@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'places/index'
+
+  get 'places/new'
+
+  get 'places/show'
+
+  get 'places/create'
+
+  get 'places/edit'
+
+  get 'places/update'
+
+  get 'places/destroy'
+
   root 'places#index'
   resources :users, :places, :dives
 
