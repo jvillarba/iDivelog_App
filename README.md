@@ -3,8 +3,7 @@
 ![](/app/assets/images/divebar.jpg)
 
 ## WDI_SM_21 Project Two
-## ONLINE SCUBA DIVELOG
-APPLICATION: [Online Divelog](https://guarded-temple-31706.herokuapp.com/sessions/new)
+## APPLICATION: [ONLINE SCUBA DIVELOG](https://guarded-temple-31706.herokuapp.com/sessions/new)
 
 ** This app will allow users to log their scuba dives with an online file system **
 
