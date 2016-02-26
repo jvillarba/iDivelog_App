@@ -4,7 +4,7 @@
 
 ## WDI_SM_21 Project Two
 ## ONLINE SCUBA DIVELOG
-APPLICATION: guarded-temple-31706
+APPLICATION: [Online Divelog](https://guarded-temple-31706.herokuapp.com/sessions/new)
 
 ** This app will allow users to log their scuba dives with an online file system **
 
