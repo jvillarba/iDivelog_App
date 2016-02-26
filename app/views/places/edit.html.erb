@@ -1,17 +1,19 @@
-<h1><center>EDIT THIS DIVE SITE</center></h1>
+<div class="container">
+  <h1><center>EDIT THIS DIVE SITE</center></h1>
 
-<%= form_for @place do |f| %>
-  <div>
-    <%= f.label :city, 'City' %>
-    <%= f.text_field :city %>
-  </div>
+  <%= form_for @place do |f| %>
+    <div>
+      <%= f.label :city, 'City' %>
+      <%= f.text_field :city %>
+    </div>
 
-  <div>
-    <%= f.label :sites, 'Site' %>
-    <%= f.text_field :sites %>
-  </div>
+    <div>
+      <%= f.label :sites, 'Site' %>
+      <%= f.text_field :sites %>
+    </div>
 
-  <div>
-    <%= f.submit "Submit changes" %>
-  </div>
-<% end %>
+    <div>
+      <%= f.submit "Submit changes" %>
+    </div>
+  <% end %>
+</div>

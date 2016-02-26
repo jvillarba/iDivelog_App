@@ -1,32 +1,34 @@
-<h1><center>ADD NEW USER</center></h1>
+<div class="container">
+  <h1><center>ADD NEW USER</center></h1>
 
-<%= form_for @user do |f| %>
-  <div>
-    <%= f.label :name, 'Name' %>
-    <%= f.text_field :name %>
-  </div>
+  <%= form_for @user do |f| %>
+    <div>
+      <%= f.label :name, 'Name' %>
+      <%= f.text_field :name %>
+    </div>
 
-  <div>
-    <%= f.label :email, 'Email' %>
-    <%= f.text_field :email %>
-  </div>
+    <div>
+      <%= f.label :email, 'Email' %>
+      <%= f.text_field :email %>
+    </div>
 
-  <div>
-    <%= f.label :password, 'Password' %>
-    <%= f.password_field :password %>
-  </div>
+    <div>
+      <%= f.label :password, 'Password' %>
+      <%= f.password_field :password %>
+    </div>
 
-  <div>
-    <%= f.label :certification, 'Certification' %>
-    <%= f.text_field :certification %>
-  </div>
+    <div>
+      <%= f.label :certification, 'Certification' %>
+      <%= f.text_field :certification %>
+    </div>
 
-  <div>
-    <%= f.label :avatar, 'Profile Picture' %>
-    <%= f.file_field :avatar %>
-  </div>
+    <div>
+      <%= f.label :avatar, 'Profile Picture' %>
+      <%= f.file_field :avatar %>
+    </div>
 
-  <div>
-    <%= f.submit "Add new user" %>
-  </div>
-<% end %>
+    <div>
+      <%= f.submit "Add new user" %>
+    </div>
+  <% end %>
+</div>
